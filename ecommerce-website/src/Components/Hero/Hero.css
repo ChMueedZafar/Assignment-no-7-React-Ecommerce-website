@@ -3,6 +3,7 @@
     background: linear-gradient(100deg,#957d97, #e1ffea22,60%);
     display: flex;
 }
+
 .hero-left{
     flex: 1;
     display: flex;
