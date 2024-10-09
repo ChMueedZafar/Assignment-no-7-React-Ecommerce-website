@@ -1,7 +1,7 @@
-import P1_img from '../Assets/Product-img1.jpg'
-import P2_img from '../Assets/Product-img2.jpg'
-import P3_img from '../Assets/Product-img3.jpeg'
-import P4_img from '../Assets/Produuct-img4.jpg'
+import P1_img from '../Assets/product-img1.png'
+import P2_img from '../Assets/product-img2.png'
+import P3_img from '../Assets/product-img3.png'
+import P4_img from '../Assets/product-img4.png'
 export const data_product = [
   {
     id: 1,
@@ -12,7 +12,7 @@ export const data_product = [
   },
   {
     id: 2,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Striped Flutter Sleeve Overlap  Collar Peplum Hem Blouse",
     image: P2_img,
     new_price: 85.00,
     old_price: 120.00,
