@@ -1,6 +1,6 @@
 import React from 'react'
 import './Offers.css'
-import exclusive_img from '../Assets/exclusive-img1.jpg'
+import exclusive_img from '../Assets/exclusive-img.png'
 const Offers = () => {
   return (
     <div className='offers'>
