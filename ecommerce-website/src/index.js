@@ -1,15 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client'; 
 import './index.css';
 import App from './App';
 import ShopContextProvider from './Context/ShopContext';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+
 root.render(
   <ShopContextProvider>
-   <App />
+    <App />
   </ShopContextProvider>
- 
 );
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import './index.css';
+// import App from './App';
+// import ShopContextProvider from './Context/ShopContext';
 
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <ShopContextProvider>
+//    <App />
+//   </ShopContextProvider>
+// );
 
