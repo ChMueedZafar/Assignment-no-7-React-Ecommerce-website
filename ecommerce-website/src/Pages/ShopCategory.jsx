@@ -7,7 +7,6 @@ import './css/ShopCategory.css'
 const ShopCategory = ({ banner, category }) => {
   const { all_product } = useContext(ShopContext);
 
-  // Filter products based on category
   const filteredProducts = all_product.filter((item) => item.category === category);
 
   return (
