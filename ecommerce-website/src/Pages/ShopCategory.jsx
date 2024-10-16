@@ -11,7 +11,7 @@ const ShopCategory = ({ banner, category }) => {
 
   return (
     <div className="shop-category">
-      <img src={banner} alt="banner" />
+      <img src={banner} alt="banner"/>
       <div className="shop-category-indexSort">
         <p>
           <span>Showing 1-12</span> out of {filteredProducts.length} Products
