@@ -1,3 +1,4 @@
+// Image Imports
 import p2_img from '../Assets/women1.jpeg';
 import p5_img from '../Assets/women2.jpeg';
 import p8_img from '../Assets/women3.jpeg';
@@ -8,7 +9,6 @@ import p20_img from '../Assets/women7.jpeg';
 import p23_img from '../Assets/women8.jpeg';
 import p26_img from '../Assets/women9.jpeg';
 
-import p3_img from '../Assets/men 1.jpeg';
 import p6_img from '../Assets/men2.jpeg';
 import p9_img from '../Assets/men3.jpeg';
 import p12_img from '../Assets/men4.jpeg';
@@ -29,16 +29,124 @@ import p22_img from '../Assets/kids8.jpeg';
 import p25_img from '../Assets/kids9.jpeg';
 import p28_img from '../Assets/kids10.jpeg';
 
+// New Collection Imports
 import p29_img from '../Assets/NewCollection1.jpg';
 import p30_img from '../Assets/NewCollection4.jpg';
 import p31_img from '../Assets/NewCollection5.jpg';
 import p32_img from '../Assets/NewCollection6.webp';
 import p33_img from '../Assets/newcollection7.jpg';
-import p34_img from '../Assets/newcollection2.jpg';
-import p35_img from '../Assets/product-img4.png';
-import p36_img from '../Assets/product-img3.png';
 
+// Product Data
 const all_product = [
+    // Men Products
+  
+    {
+        id: 11,
+        name: "Men's Grey Hoodie",
+        category: "men",
+        image: p6_img,
+        new_price: 80.0,
+        old_price: 110.0,
+    },
+    {
+        id: 12,
+        name: "Men's Blue Sweatshirt",
+        category: "men",
+        image: p9_img,
+        new_price: 78.0,
+        old_price: 105.0,
+    },
+    {
+        id: 13,
+        name: "Men's Red T-Shirt",
+        category: "men",
+        image: p12_img,
+        new_price: 70.0,
+        old_price: 100.0,
+    },
+    {
+        id: 14,
+        name: "Men's Black Jeans",
+        category: "men",
+        image: p15_img,
+        new_price: 90.0,
+        old_price: 130.0,
+    },
+    {
+        id: 15,
+        name: "Men's Green Shirt",
+        category: "men",
+        image: p18_img,
+        new_price: 95.0,
+        old_price: 140.0,
+    },
+    {
+        id: 16,
+        name: "Men's Blue Denim Jacket",
+        category: "men",
+        image: p21_img,
+        new_price: 100.0,
+        old_price: 150.0,
+    },
+    {
+        id: 17,
+        name: "Men's White Polo",
+        category: "men",
+        image: p24_img,
+        new_price: 80.0,
+        old_price: 110.0,
+    },
+    {
+        id: 18,
+        name: "Men's Grey Suit",
+        category: "men",
+        image: p27_img,
+        new_price: 150.0,
+        old_price: 200.0,
+    },
+    // New Collection
+    {
+        id: 29,
+        name: "New Collection - Item 1",
+        category: "new",
+        image: p29_img,
+        new_price: 100.0,
+        old_price: 150.0,
+    },
+    {
+        id: 30,
+        name: "New Collection - Item 2",
+        category: "new",
+        image: p30_img,
+        new_price: 110.0,
+        old_price: 160.0,
+    },
+    {
+        id: 31,
+        name: "New Collection - Item 3",
+        category: "new",
+        image: p31_img,
+        new_price: 120.0,
+        old_price: 170.0,
+    },
+    {
+        id: 32,
+        name: "New Collection - Item 4",
+        category: "new",
+        image: p32_img,
+        new_price: 130.0,
+        old_price: 180.0,
+    },
+    {
+        id: 33,
+        name: "New Collection - Item 5",
+        category: "new",
+        image: p33_img,
+        new_price: 140.0,
+        old_price: 190.0,
+    },
+
+    // Women Products
     {
         id: 1,
         name: "Women's Orange Colourblocked Hooded Sweatshirt",
@@ -112,79 +220,7 @@ const all_product = [
         old_price: 135.0,
     },
 
-    {
-        id: 10,
-        name: "Men's Black Jacket",
-        category: "men",
-        image: p3_img,
-        new_price: 85.0,
-        old_price: 120.0,
-    },
-    {
-        id: 11,
-        name: "Men's Grey Hoodie",
-        category: "men",
-        image: p6_img,
-        new_price: 80.0,
-        old_price: 110.0,
-    },
-    {
-        id: 12,
-        name: "Men's Blue Sweatshirt",
-        category: "men",
-        image: p9_img,
-        new_price: 78.0,
-        old_price: 105.0,
-    },
-    {
-        id: 13,
-        name: "Men's Red T-Shirt",
-        category: "men",
-        image: p12_img,
-        new_price: 70.0,
-        old_price: 100.0,
-    },
-    {
-        id: 14,
-        name: "Men's Black Jeans",
-        category: "men",
-        image: p15_img,
-        new_price: 90.0,
-        old_price: 130.0,
-    },
-    {
-        id: 15,
-        name: "Men's Green Shirt",
-        category: "men",
-        image: p18_img,
-        new_price: 95.0,
-        old_price: 140.0,
-    },
-    {
-        id: 16,
-        name: "Men's Blue Denim Jacket",
-        category: "men",
-        image: p21_img,
-        new_price: 100.0,
-        old_price: 150.0,
-    },
-    {
-        id: 17,
-        name: "Men's White Polo",
-        category: "men",
-        image: p24_img,
-        new_price: 80.0,
-        old_price: 110.0,
-    },
-    {
-        id: 18,
-        name: "Men's Grey Suit",
-        category: "men",
-        image: p27_img,
-        new_price: 150.0,
-        old_price: 200.0,
-    },
-
+    // Kids Products
     {
         id: 19,
         name: "Boys' Orange Colourblocked Hooded Sweatshirt",
@@ -266,71 +302,5 @@ const all_product = [
         old_price: 120.0,
     },
 
-    // New Collection
-    {
-        id: 29,
-        name: "New Collection - Item 1",
-        category: "new",
-        image: p29_img,
-        new_price: 100.0,
-        old_price: 150.0,
-    },
-    {
-        id: 30,
-        name: "New Collection - Item 2",
-        category: "new",
-        image: p30_img,
-        new_price: 110.0,
-        old_price: 160.0,
-    },
-    {
-        id: 31,
-        name: "New Collection - Item 3",
-        category: "new",
-        image: p31_img,
-        new_price: 120.0,
-        old_price: 170.0,
-    },
-    {
-        id: 32,
-        name: "New Collection - Item 4",
-        category: "new",
-        image: p32_img,
-        new_price: 130.0,
-        old_price: 180.0,
-    },
-    {
-        id: 33,
-        name: "New Collection - Item 5",
-        category: "new",
-        image: p33_img,
-        new_price: 140.0,
-        old_price: 190.0,
-    },
-    {
-        id: 34,
-        name: "New Collection - Item 6",
-        category: "new",
-        image: p34_img,
-        new_price: 150.0,
-        old_price: 200.0,
-    },
-    {
-        id: 35,
-        name: "New Collection - Item 7",
-        category: "new",
-        image: p35_img,
-        new_price: 160.0,
-        old_price: 210.0,
-    },
-    {
-        id: 36,
-        name: "New Collection - Item 8",
-        category: "new",
-        image: p36_img,
-        new_price: 170.0,
-        old_price: 220.0,
-    },
 ];
-
 export default all_product;
