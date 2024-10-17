@@ -9,6 +9,8 @@ import p20_img from '../Assets/women7.jpeg';
 import p23_img from '../Assets/women8.jpeg';
 import p26_img from '../Assets/women9.jpeg';
 
+
+
 import p6_img from '../Assets/men2.jpeg';
 import p9_img from '../Assets/men3.jpeg';
 import p12_img from '../Assets/men4.jpeg';
