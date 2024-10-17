@@ -1,23 +1,30 @@
 import React, { useContext } from 'react';
 import { ShopContext } from '../Context/ShopContext';
-import dropdown_icon from '../Components/Assets/arrow down img.png';
+import dropdown_icon from '../Components/Assets/down arrow-img.png';
 import Item from '../Components/Item/Item';
-import './css/ShopCategory.css'
 
 const ShopCategory = ({ banner, category }) => {
   const { all_product } = useContext(ShopContext);
 
-  const filteredProducts = all_product.filter((item) => item.category === category);
+  const filteredProducts = Array.isArray(all_product)
+    ? all_product.filter(
+        (item) =>
+          !category || // Show all products if no category is provided
+          (typeof item.category === 'string' &&
+            typeof category === 'string' &&
+            item.category.trim().toLowerCase() === category.trim().toLowerCase())
+      )
+    : [];
 
   return (
     <div className="shop-category">
-      <img src={banner} alt="banner"/>
+      <img src={banner} alt="banner" />
       <div className="shop-category-indexSort">
         <p>
           <span>Showing 1-12</span> out of {filteredProducts.length} Products
         </p>
         <div className="shopcategory-sort">
-          Sort by <img className='arroedown-img' src={dropdown_icon} alt="dropdown-icon" />
+          Sort by <img style={{ width: 15 }} src={dropdown_icon} alt="dropdown-icon" />
         </div>
       </div>
 
