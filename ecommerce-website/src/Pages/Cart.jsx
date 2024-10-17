@@ -1,13 +1,13 @@
 // src/components/Cart.js
 import React, { useContext } from 'react';
 import { ShopContext } from '../Context/ShopContext';
-import './Cart.css'; // Make sure this file exists for styles
+import './Cart.css'; 
 
 const Cart = () => {
   const { cartItems, updateCartItem, removeFromCart } = useContext(ShopContext);
 
   const handleQuantityChange = (id, quantity) => {
-    if (quantity < 1) return; // Prevent quantity from going below 1
+    if (quantity < 1) return; 
     updateCartItem(id, quantity);
   };
 
